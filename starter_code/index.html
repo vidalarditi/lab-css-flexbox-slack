@@ -7,91 +7,126 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style-2.css">
 </head>
 
 <body>
   <nav>
     <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
+    
+    <ul class="flex-container-row flex-aligner-center">
       <li>Why Slack?</li>
       <li>Pricing</li>
       <li>About Us</li>
       <li>Your Workspaces</li>
     </ul>
+    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
   </nav>
-  <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+  <header class="flex-container-col flex-aligner-center">
+    <img src="./images/home_talking.png" alt="home_work_happening" class="flex-item-center flex-order">
+    <div class="header-text">
+      <h1 class="flex-item-left">Where Work Happens</h1>
+      <p class="flex-item-center">When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+    </div>
+    <form class="flex-container-col flex-aligner-center form-layout">
+      <input type="email" placeholder="Email address" class="button-layout border-box input-button">
+      <button type="button" name="button" class="button-layout button-get">GET STARTED</button>
+    </form>
+    
+    <p class="flex-item-center btn-spacer" id="header-p">Already using Slack? <a href="#">Sign in.</a></p>
   </header>
   <main>
-    <div>
-      <h2>You´re in good company</h2>
-      <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+    <div class="flex-container-col flex-aligner-center bckgrnd-grey" id="good-company">
+      <div>
+      <h2 class="flex-item-center">You're in good company</h2>
+      <p class="flex-item-center">Millions of people around the world have already made Slack the place where their work happens.</p>
+      <button class="flex-item-center button-layout button-why form-layout" >DISCOVER WHY</button>
+      </div>
+      <div class="flex-container-row flex-aligner-center flex-item-left">
+        <div class="main-width img-border-width flex-container-col flex-aligner-center">
+         <img class="border-box width-small airbnb-logo" src="./images/airbnb-logo.png" alt=""> 
+        </div>
+        <div class="main-width img-border-width flex-container-col flex-aligner-center">
+          <img class="border-box width-small" src="./images/capital-one-logo.png" alt=""> 
+        </div>
+        <div class="main-width img-border-width flex-container-col flex-aligner-center">
+          <img class="border-box width-small airbnb-logo" src="./images/harvard-logo.png" alt=""> 
+        </div>
+        <div class="main-width img-border-width flex-container-col flex-aligner-center">
+          <img class="border-box width-large" src="./images/los-angeles-times-logo.png" alt=""> 
+        </div>
+        <div class="main-width img-border-width flex-container-col flex-aligner-center">
+          <img class="border-box width-small" src="./images/oracle-logo.png" alt="" id="img-smaller">
+        </div>
+        <div class="main-width flex-container-col flex-aligner-center img-border-noshow">
+          <img class="border-box width-small" src="./images/ticketmaster-logo.png" alt="" id="img-smaller" id="no-border"> 
+        </div>
+      </div>
     </div>
-    <div>
-      <p>Try it for free</p>
+    <div class="flex-container-col flex-aligner-center bckgrnd-white">
+      <h3>Try it for free</h3>
       <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+      <form class="flex-container-col flex-aligner-center form-layout">
+        <input type="email" placeholder="Email address" class="button-layout border-box input-button">
+        <button type="button" name="button" class="button-layout button-get form-layout">GET STARTED</button>
+      </form>
     </div>
   </main>
   <footer>
-    <div>
-      <img src="./images/iso-slack.png" alt="">
-      <ul>
-        <li>COMPANY</li>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Blog</li>
-        <li>Press</li>
-        <li>Brand Guidelines</li>
-      </ul>
-      <ul>
-        <li>PRODUCT</li>
-        <li>Why Slack?</li>
-        <li>Enterprise</li>
-        <li>Customer Stories</li>
-        <li>Pricing</li>
-        <li>Security</li>
-      </ul>
-      <ul>
-        <li>RESOURCES</li>
-        <li>Download</li>
-        <li>Help Center</li>
-        <li>Guides</li>
-        <li>Events</li>
-        <li>App Directory</li>
-        <li>API</li>
-      </ul>
-      <ul>
-        <li>EXTRAS</li>
-        <li>Podcast</li>
-        <li>Slack Shop</li>
-        <li>Slack at Work</li>
-        <li>Slack Fund</li>
-      </ul>
+    <div class="flex-container-row">
+      <div id="slack-div">
+      <img src="./images/iso-slack.png" alt="" id="slack-logo">
+      </div>
+      <div class="flex-container-row flex-item-left" id="footer-mid-div">
+        <ul class="flex-container-col flex-footer-item-row margin-aligner-left">
+          <li class="flex-footer-item-col"><strong>COMPANY</strong></li>
+          <li class="flex-footer-item-col">About Us</li>
+          <li class="flex-footer-item-col">Careers</li>
+          <li class="flex-footer-item-col">Blog</li>
+          <li class="flex-footer-item-col">Press</li>
+          <li class="flex-footer-item-col">Brand Guidelines</li>
+        </ul>
+        <ul class="flex-container-col flex-footer-item-row">
+          <li class="flex-footer-item-col"><strong>PRODUCT</strong></li>
+          <li class="flex-footer-item-col">Why Slack?</li>
+          <li class="flex-footer-item-col">Enterprise</li>
+          <li class="flex-footer-item-col">Customer Stories</li>
+          <li class="flex-footer-item-col">Pricing</li>
+          <li class="flex-footer-item-col">Security</li>
+        </ul>
+        <ul class="flex-container-col flex-footer-item-row margin-aligner-left">
+          <li class="flex-footer-item-col"><strong>RESOURCES</strong></li>
+          <li class="flex-footer-item-col">Download</li>
+          <li class="flex-footer-item-col">Help Center</li>
+          <li class="flex-footer-item-col">Guides</li>
+          <li class="flex-footer-item-col">Partners</li>
+          <li class="flex-footer-item-col">Events</li>
+          <li class="flex-footer-item-col">App Directory</li>
+          <li class="flex-footer-item-col">API</li>
+        </ul>
+        <ul class="flex-container-col flex-footer-item-row">
+          <li class="flex-footer-item-col"><strong>EXTRAS</strong></li>
+          <li class="flex-footer-item-col">Podcast</li>
+          <li class="flex-footer-item-col">Slack Shop</li>
+          <li class="flex-footer-item-col">Slack at Work</li>
+          <li class="flex-footer-item-col">Slack Fund</li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <ul>
+    <div class="bckgrnd-grey flex-container-col flex-aligner-center footer-bottom " >
+      <ul class="flex-container-row flex-aligner-spacearound" id="top-margin">
         <li>Status</li>
-        <li>Privacy & Terms</li>
+        <li id="midlle-padding">Privacy & Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
+      <div class="flex-container-row flex-aligner-spacearound"  id="mid-margin">
         <img src="./images/us-flag.png" alt="">
-        <span>English (US)</span>
+        <span id="double-middle-margin">English (US)</span>
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+      <div class="flex-container-row flex-aligner-spacearound" id="bottom-margin">
         <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-facebook" id="triple-middle-margin" aria-hidden="true"></i>
         <i class="fa fa-youtube-play" aria-hidden="true"></i>
       </div>
     </div>
